@@ -5,8 +5,8 @@ I need python code which will read info file and check the below arguments exist
 (ArchkRunDate CellArea CellHeight CellHeightGrids CellWidth CellWidthGrids DiffAreas GDSCellName GateAreas LefGeneration NumTransistors RawGateDensity TransistorsPerGrid pin_V)
 The below arguments should be checked only for cells which start with (fs|fd|fr|sync) prefixes or contain (_fs|_fd|_fr|_sync) :
 (IntNode_ NoCKSkew_ NACKSkew_)
-The below arguments should be checked only for cells which start with (fill_|filld_) prefixes or contain (_fill_|_filld_) :
-(IntNode_ NoCKSkew_ NACKSkew_)
+The below arguments should not be checked only for cells which start with (fill_|filld_) prefixes or contain (_fill_|_filld_) :
+("DiffAreas,GateAreas")
 
 Script should take 2 arguments:
 1st path where script should check info files
